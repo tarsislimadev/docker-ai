@@ -1,0 +1,5 @@
+services:
+  txt2mp3:
+    image: 'tmvdl/ai:txt2mp3'
+    build: './src/txt2mp3'
+    restart: always
