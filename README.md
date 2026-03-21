@@ -1,4 +1,4 @@
-# P Robots
+# Docker AI
 
 This project has many offline AI workflows.
 
@@ -25,6 +25,12 @@ This project has many offline AI workflows.
 ## from text to text (translating)
 
 [argostranslate]()
+
+## from txt to audio (text-to-speech)
+
+```bash
+docker run -v .:/files -w /files -e input=file.txt -e output=file.mp3 tmvdl/ai:txt2mp3
+```
 
 ## from pdf file to text
 
