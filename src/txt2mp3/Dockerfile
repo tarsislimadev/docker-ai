@@ -1,7 +1,5 @@
 FROM python:alpine
 
-WORKDIR /app
-
-COPY . .
+COPY ./app.py /app/app.py
 
 CMD python /app/app.py
