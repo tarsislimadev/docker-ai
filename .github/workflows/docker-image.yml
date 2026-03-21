@@ -15,3 +15,5 @@ jobs:
       with:
         username: ${{ vars.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: Push Docker images
+      run: docker image push tmvdl/ai -a
