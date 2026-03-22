@@ -6,4 +6,6 @@ ENV input=file.txt
 
 ENV output=file.wav
 
-CMD espeak-ng -f "${input}" -w "${output}"
+ENV voice=en-us
+
+CMD espeak-ng -v "${voice}" -f "${input}" -w "${output}"
