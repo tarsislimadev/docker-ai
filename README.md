@@ -30,6 +30,8 @@ This project has many offline AI workflows.
 
 ```bash
 docker run -v .:/files -w /files -e input=file.txt -e output=file.wav tmvdl/ai:txt2wav
+# In Portuguese
+docker run -v .:/files -w /files -e voice=pt-br -e input=file.txt -e output=file.wav tmvdl/ai:txt2wav
 ```
 
 ## from pdf file to text
