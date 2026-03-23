@@ -5,3 +5,7 @@ services:
   pdf2txt:
     image: 'tmvdl/ai:pdf2txt'
     build: './src/pdf2txt'
+
+  png2txt:
+    image: 'tmvdl/ai:png2txt'
+    build: './src/png2txt'
